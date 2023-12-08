@@ -1,0 +1,99 @@
+:root {
+     --color1: #061f58;
+     --color2: #000;    
+     --gradient: linear-gradient(-35deg, var(--color1), var(--color2));
+}
+
+
+body {
+     /* background-color: #F8F6F4; */
+     background-image: var(--gradient);
+     color: #fff;
+}
+
+header.masthead {
+     color: #fff;
+     text-align: left;
+     background-repeat: no-repeat;
+     background-attachment: scroll;
+     background-position: center center;
+     background-size: cover;
+     height: 850px;
+     
+} 
+
+
+#mainNav.navbar-shrink {
+     padding-top: 0;
+     padding-bottom: 0;
+     background-color: #00113A;
+ }
+.nav-text {
+     font-family: 'Pixelify', sans-serif;
+}
+
+.card-body-image {
+     color: #F02900;
+     height: 200px;
+}
+
+.card {
+     --bs-card-spacer-y: 3rem;
+     --bs-card-bg: #062A84;
+}
+
+.card-title, .card-body {
+     color: white;
+}
+
+.card-body {
+     border: solid 1px #061f58;
+}
+
+.card-header, .card-footer {
+     color: #fff;
+     background-color: #061f58;
+}
+
+
+.btn {
+     background-color: #39C003;
+     color: #fff;
+     border: 0;
+}
+
+
+.btn:hover {
+     background-color: #00B2E2;
+     border: #00B2E2;
+}
+
+#mainNav .navbar-toggler {
+     font-size: 12px;
+     right: 0px;
+     padding: 13px;
+     text-transform: uppercase;
+     color: rgb(255, 255, 255);
+     border: 0px;
+     background-color: #F02900;
+     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text-muted {
+     --bs-text-opacity: 1;
+     color: var(--bs-white) !important;
+ }
+
+
+
+.bg-dark {
+     /* background-color: #343a40 !important; */
+ }
+ 
+ .bg-dark {
+     --bs-bg-opacity: 1;
+     /* background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; */
+ }
+
+
+
