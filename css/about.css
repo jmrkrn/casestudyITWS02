@@ -32,3 +32,33 @@ body {
  .list-group-item {
      color: #fff;
  }
+
+ 
+@media (max-width: 576px) {
+    #mainNav {
+         padding-top: 0;
+         padding-bottom: 0;
+         background-color: #00113A;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #mainNav {
+         padding-top: 0;
+         padding-bottom: 0;
+         background-color: #00113A;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    #mainNav {
+         padding-top: 0;
+         padding-bottom: 0;
+         background-color: #00113A;
+    }
+
+
+}
