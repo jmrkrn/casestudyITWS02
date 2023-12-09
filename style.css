@@ -1,6 +1,6 @@
 :root {
      --color1: #061f58;
-     --color2: #000;    
+     --color2: #000;
      --gradient: linear-gradient(-35deg, var(--color1), var(--color2));
 }
 
@@ -11,29 +11,35 @@ body {
      color: #fff;
 }
 
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+     /*color: #fed136;*/
+     color: #ffd608;
+     
+ }
+
+
 header.masthead {
      color: #fff;
-     text-align: left;
+     text-align: center;
      background-repeat: no-repeat;
      background-attachment: scroll;
      background-position: center center;
      background-size: cover;
-     height: 850px;
-     
-} 
+     background-image: url('assets/img/sample12.png');
+
+}
 
 
 #mainNav.navbar-shrink {
      padding-top: 0;
      padding-bottom: 0;
      background-color: #00113A;
- }
-.nav-text {
-     font-family: 'Pixelify', sans-serif;
 }
 
+
+
 .card-body-image {
-     color: #F02900;
+     color: #000;
      height: 200px;
 }
 
@@ -42,7 +48,8 @@ header.masthead {
      --bs-card-bg: #062A84;
 }
 
-.card-title, .card-body {
+.card-title,
+.card-body {
      color: white;
 }
 
@@ -50,7 +57,8 @@ header.masthead {
      border: solid 1px #061f58;
 }
 
-.card-header, .card-footer {
+.card-header,
+.card-footer {
      color: #fff;
      background-color: #061f58;
 }
@@ -82,18 +90,49 @@ header.masthead {
 .text-muted {
      --bs-text-opacity: 1;
      color: var(--bs-white) !important;
- }
+}
 
 
 
 .bg-dark {
      /* background-color: #343a40 !important; */
- }
- 
- .bg-dark {
+}
+
+.bg-dark {
      --bs-bg-opacity: 1;
      /* background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; */
- }
+}
+
+@media (max-width: 576px) {
+     .masthead {
+          background-image: url(assets/img/sample13.png);
+          background-size: contain;
+     }
+
+     #mainNav {
+          padding-top: 0;
+          padding-bottom: 0;
+          background-color: #00113A;
+     }
+
+}
+
+@media (max-width: 768px) {
+     #mainNav {
+          padding-top: 0;
+          padding-bottom: 0;
+          background-color: #00113A;
+     }
 
 
+}
 
+@media (max-width: 992px) {
+     #mainNav {
+          padding-top: 0;
+          padding-bottom: 0;
+          background-color: #00113A;
+     }
+
+
+}
