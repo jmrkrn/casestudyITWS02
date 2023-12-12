@@ -10,34 +10,26 @@ body {
      color: #fff;
 }
 
-
-.last-two {
-    margin-top: 30px;
-    padding-left: 165px;
-    padding-right: 165px;
+header.masthead {
+    color: #fff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('assets/img/sample-gp.jpg');
 }
 
-
-/*
-.section-subheading {
-    margin-top: 40px;
+.heading-text {
+    margin-bottom: 200px;
 }
 
-
-/* 
-
-.underline::after {
-    content: ' ';
-    position: absolute;
-    height: 4px;
-    width: 20%;
-    left: 500px;
-    bottom: -10px;
-    border-radius: 20px;
-    background-color: #11B1E0;
-    margin: 0 auto;
+header {
+	background: no-repeat center center;
+	background-size: cover;
+	color: black;
 }
-*/
+
 
 #mainNav {
      padding-top: 0;
@@ -45,7 +37,7 @@ body {
      /* background: linear-gradient(to left, #061f58, #000); */s
      scroll-behavior: smooth;
  }
- 
+
  #mainNav.navbar-shrink {
      padding-top: 0;
      padding-bottom: 0;
@@ -54,15 +46,37 @@ body {
 
  .text-muted {
      --bs-text-opacity: 1;
-     color: var(--bs-white) !important;
+     /* color: var(--bs-secondary-color) !important; */
  }
 
- .team-image {
-	height: 370px ;
-	width: 550px
+ .list-group-item {
+     color: #fff;
  }
 
- section.page-footer{
+ 
+ .big-img {
+    height: 500px;
+    width: 500px;
+    padding: auto;
+ }
+
+ .big-img img {
+    height: 70vh;
+    width: 150vh;
+ }
+
+ .about-image {
+	height: 45vh; 
+	width: 100%
+ }
+
+ .custom-subheading {
+padding: 20px 50px 50px;
+line-height: 1.3;
+ }
+ 
+ 
+section.page-footer{
 	width: 100%;
 	padding: 70px 8% 50px;
 	background-color: #000C27;
@@ -169,24 +183,25 @@ body {
 }
 /*   === Footer Section Styling Ends ===   */
 
-
-
-
- 
 @media (max-width: 576px) {
-    
-
     #mainNav {
          padding-top: 0;
          padding-bottom: 0;
-         background-color: #000103;
+         background-color: #00113A;
     }
 
-    
-    .last-two {
-        margin-top: 30px;
-        padding: 0px;
+    .custom-container {
+        flex-direction: column-reverse;
     }
+
+    .custom-container-1 {
+        flex-direction: column;
+    }
+
+    .about-image {
+	height: 30vh; 
+	width: 100%
+ }
 
 
 }
@@ -195,16 +210,22 @@ body {
     #mainNav {
          padding-top: 0;
          padding-bottom: 0;
-         background-color: #000103;
+         background-color: #00113A;
     }
 
     
-    .last-two {
-        margin-top: 30px;
-        padding: 0px;
+    .custom-container {
+        flex-direction: column-reverse;
     }
 
+    .custom-container-1 {
+        flex-direction: column;
+    }
 
+    .about-image {
+	height: 30vh; 
+	width: 100%
+ }
 
 }
 
@@ -212,14 +233,22 @@ body {
     #mainNav {
          padding-top: 0;
          padding-bottom: 0;
-         background-color: #000103;
+         background-color: #00113A;
     }
+
     
-    
-.last-two {
-    margin-top: 30px;
-    padding: 0px;
-}
+    .custom-container {
+        flex-direction: column-reverse;
+    }
+
+    .custom-container-1 {
+        flex-direction: column;
+    }
+    .about-image {
+	height: 30vh; 
+	width: 100%
+ }
+
 
 
 }
