@@ -1,39 +1,37 @@
-let cardGroup = ["🦄", "🍦", "🌈", "👽", "👾", "🤖", "👹", "👺"];
+let cardGroup = ["🫀", "💅", "🌸", "🔥", "🍑", "🇵🇭", "🐋", "💀"];
 
 let totalCards = cardGroup.concat(cardGroup);
+let startTime; 
 
-function distributeCard () {
+function deckCards() {
+    let result;
+    result = totalCards.sort(function () {
+        return 0.5 - Math.random();
+    });
+    return result;
+}
+
+function distributeCard() {
     let table = document.querySelector("#table");
     let shuffledCards = deckCards();
-    function deckCards() {
-        let result;
-
-        result = totalCards.sort(function(){
-            return 0.5- Math.
-            random();
-        });
-        return result;
-        }
-
     table.innerHTML = "";
 
-    shuffledCards.forEach (function(element) { 
+    shuffledCards.forEach(function(element){
         let card = document.createElement("div");
-    
-        card.innerHTML =  
-                "<div class='card' data-value= " +
-                 element + 
-                ">" +
-                "<div class= 'card_content'>" +
-                element + 
-                "</div>" + 
-                "</div>";
-    
+
+        card.innerHTML =
+            "<div class='card' data-value= " + element +">" +
+            "<div class='card_content'>" + element + "</div>" +
+            "</div>";
+
         table.appendChild(card);
     });
-}
+
     
-function discover() { 
+    startTime = new Date().getTime();
+}
+
+function discover() {
     let discovery;
     let totalDiscovery = document.querySelectorAll(".discovered");
 
@@ -43,37 +41,52 @@ function discover() {
 
     this.classList.add("discovered");
 
-    discover = document.querySelectorAll(".discovered");
-    if (discovery.length < 2){
+    discovery = document.querySelectorAll(".discovered");
+    if (discovery.length < 2) {
         return;
     }
-
-   compare(discovery)
+    
+    compare(discovery);
 }
 
-    function compare (cardsTocompare){
-        if (cardsTocompare[0].dataset.value === cardsTocompare[1].
-            dataset.value) {
-            success(cardsTocompare)
-        } else {
-           
-        }
+function compare(cardsToCompare){
+    if (cardsToCompare[0].dataset.value === cardsToCompare[1].dataset.value ) {
+        success(cardsToCompare);
+    } else {
+        setTimeout(function() {
+            cardsToCompare.forEach(function(element){
+                element.classList.remove("discovered");
+            });
+        }, 1000);
     }
+}
 
-    function success (lastCard){
-        lastCard.forEach(function(element){
-            element.classList.add("successful");
-        });
+function success(lastCard) {
+    lastCard.forEach(function(element){
+        element.classList.add("successful");
+        element.classList.remove("discovered");
+    });
+
+    
+    let allSuccessful = document.querySelectorAll(".successful");
+    if (allSuccessful.length === totalCards.length) {
+        endGame();
     }
+}
 
-    function error ()
-    {
-        console.log("error");
-    }
+function endGame() {
+    let endTime = new Date().getTime();
+    let totalTime = (endTime - startTime) / 1000; 
+    
+    alert("Congratulations! You've successfully completed the game in " + totalTime + " seconds. You're awesome!");
+}
 
-distributeCard ();
+function error() {
+    console.log("error");
+}
 
-document.querySelectorAll(".card").forEach(function(element) { 
+distributeCard();
+
+document.querySelectorAll(".card").forEach(function (element) {
     element.addEventListener("click", discover);
 });
-

@@ -13,6 +13,7 @@ body {
 #mainNav {
      padding-top: 0;
      padding-bottom: 0;
+	background-color: transparent;
      /* background: linear-gradient(to left, #061f58, #000); */s
      scroll-behavior: smooth;
  }
@@ -200,7 +201,7 @@ body {
      #mainNav {
           padding-top: 0;
           padding-bottom: 0;
-          background-color: #00113A;
+		background-color: #000103;
      }
 
 	.last-two {
@@ -214,7 +215,7 @@ body {
      #mainNav {
           padding-top: 0;
           padding-bottom: 0;
-          background-color: #00113A;
+		background-color: #000103;
      }
 
 	.last-two {
@@ -231,7 +232,7 @@ body {
      #mainNav {
           padding-top: 0;
           padding-bottom: 0;
-          background-color: #00113A;
+		background-color: #000103;
      }
 	
 	.last-two {

@@ -176,7 +176,8 @@ header.masthead {
 section.page-footer{
 	width: 100%;
 	padding: 70px 8% 50px;
-	background-color: #000C27;
+     background-image: linear-gradient(-35, #000,  #000C27);
+	background-color: #000C27; 
 	color: var(--light-heading-clr);
 }
 .page-footer .footer-contents{
