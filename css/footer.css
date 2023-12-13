@@ -1,3 +1,8 @@
+
+.footer-col-title {
+	color: #C4A200;
+}
+
 /*   === Media Query Starts ===   */
 @media(min-width: 1400px){
 	/* Navbar */
