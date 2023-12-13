@@ -3,6 +3,10 @@
 	color: #C4A200;
 }
 
+.footer-col-desc {
+	color: rgba(245, 245, 245, 0.766);
+} 
+
 /*   === Media Query Starts ===   */
 @media(min-width: 1400px){
 	/* Navbar */

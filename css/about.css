@@ -62,13 +62,13 @@ header {
  }
 
  .big-img img {
-    height: 70vh;
-    width: 150vh;
+    height: 85vh;
+    width: 135vh;
  }
 
  .about-image {
-	height: 45vh; 
-	width: 100%
+	height: 100%; 
+	width: 100%;
  }
 
  .custom-subheading {
