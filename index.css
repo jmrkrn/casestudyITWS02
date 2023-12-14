@@ -113,6 +113,14 @@ header.masthead .intro-text .intro-lead-in {
      --bs-card-bg: #062A84;
 }
 
+.news-card {
+      background-color: #061F58;
+      border: solid 1px black;
+}
+.news-and-update {
+     flex-direction: row;
+}
+
 .card-title,
 .card-body {
      color: white;
