@@ -1,0 +1,238 @@
+:root {
+     --color1: #061f58;
+     --color2: #000;    
+     --gradient: linear-gradient(-35deg, var(--color1), var(--color2));
+}
+
+body {
+     /* background-color: #F8F6F4; */
+     background-image: var(--gradient);
+     color: #fff;
+}
+
+
+.last-two {
+    margin-top: 30px;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+.jump-animation {
+	animation: jump 1s infinite alternate;
+  }
+  
+  @keyframes jump {
+	0%,
+	100% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(-20px);
+	}
+  }
+
+/*
+.section-subheading {
+    margin-top: 40px;
+}
+
+
+/* 
+
+.underline::after {
+    content: ' ';
+    position: absolute;
+    height: 4px;
+    width: 20%;
+    left: 500px;
+    bottom: -10px;
+    border-radius: 20px;
+    background-color: #11B1E0;
+    margin: 0 auto;
+}
+*/
+
+#mainNav {
+     padding-top: 0;
+     padding-bottom: 0;
+     /* background: linear-gradient(to left, #061f58, #000); */
+     scroll-behavior: smooth;
+ }
+ 
+ #mainNav.navbar-shrink {
+     padding-top: 0;
+     padding-bottom: 0;
+     background-color: #00113A;
+ }
+
+ .text-muted {
+     --bs-text-opacity: 1;
+     color: var(--bs-white) !important;
+ }
+
+ .team-image {
+	height: 370px ;
+	width: 550px
+ }
+
+ section.page-footer{
+	width: 100%;
+	padding: 70px 8% 50px;
+	background-color: #000C27;
+	color: var(--light-heading-clr);
+}
+.page-footer .footer-contents{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 3fr 2fr 2fr;
+	grid-gap: 40px;
+}
+.footer-contents .footer-col{
+	display: flex;
+	flex-direction: column;
+}
+.footer-contents .footer-col .footer-col-title{
+	margin-bottom: 20px;
+}
+.footer-col .footer-col-title h3{
+	font-size: 24px;
+	color: var(--light-heading-clr);
+	text-transform: capitalize;
+}
+.footer-contents .footer-col .footer-col-desc{
+	display: flex;
+	flex-direction: column;
+}
+.footer-col-1 .footer-col-desc p{
+	line-height: 1.4;
+	color: var(--light-text-clr);
+	margin-bottom: 10px;
+}
+.footer-col-1 .footer-col-desc span{
+	color: var(--light-text-clr);
+	margin-bottom: 17px;
+	display: inline-block;
+}
+.footer-col-1 .footer-col-desc span:nth-of-type(1){
+	margin-top: 15px;
+}
+.footer-col-1 .footer-social-media{
+	display: flex;
+	margin-top: 20px;
+}
+.footer-col-1 .footer-social-media a{
+	text-decoration: none;
+	color: var(--light-text-clr);
+	margin-right: 10px;
+}
+.footer-col-1 .footer-social-media a i{
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	background-color: var(--primary-clr);
+	color: var(--light-heading-clr);
+	border: 1px solid transparent;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+.footer-col-1 .footer-social-media a i:hover{
+	background-color: transparent;
+	border: 1px solid var(--primary-clr);
+	color: var(--primary-clr);
+}
+.footer-col-2 .footer-col-desc a{
+	text-decoration: none;
+	font-size: 16px;
+	color: var(--light-text-clr);
+	letter-spacing: 1px;
+	margin-bottom: 17px;
+	transition: 0.3s;
+}
+.footer-col-2 .footer-col-desc a:hover{
+	color: var(--primary-clr);
+}
+.footer-col-3 .footer-col-desc p{
+	color: var(--light-text-clr);
+	line-height: 1.4;
+}
+.footer-col-3 .footer-col-desc input{
+	width: 100%;
+	padding: 15px;
+	margin: 20px 0px 15px;
+	background-color: var(--light-heading-clr);
+	color: var(--dark-text-clr);
+	border: none;
+	border-radius: 25px;
+}
+.copy-rights{
+	width: 100%;
+	padding: 30px 8%;
+	background-color: var(--dark-bg-clr);
+	border-top: 1px solid #333;
+}
+.copy-rights p{
+	color: var(--light-text-clr);
+	text-align: center;
+}
+.copy-rights p b{
+	color: var(--primary-clr);
+}
+/*   === Footer Section Styling Ends ===   */
+
+
+
+
+ 
+@media (max-width: 576px) {
+    
+
+    #mainNav {
+         padding-top: 0;
+         padding-bottom: 0;
+         background-color: #000103;
+    }
+
+    
+    .last-two {
+        margin-top: 30px;
+        padding: 0px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    #mainNav {
+         padding-top: 0;
+         padding-bottom: 0;
+         background-color: #000103;
+    }
+
+    
+    .last-two {
+        margin-top: 30px;
+        padding: 0px;
+    }
+
+
+
+}
+
+@media (max-width: 992px) {
+    #mainNav {
+         padding-top: 0;
+         padding-bottom: 0;
+         background-color: #000103;
+    }
+    
+    
+.last-two {
+    margin-top: 30px;
+    padding: 0px;
+}
+
+
+}
