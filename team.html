@@ -20,9 +20,13 @@
      <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
      <link rel="stylesheet" href="css/team.css">
      <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/animation.css">
+     <script type="text/javascript" src="assets/js/animation.js"></script>
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+    <div id="loader"></div>
+    <div id="content"> 
 <nav class="navbar navbar-expand-lg fixed-top custom-nav" id="mainNav">
      <div class="container">
           <a class="navbar-brand nav-text" href="#page-top ">
@@ -57,7 +61,8 @@
                     </div>
               <div class="row">
                   <div class="col-sm-4">
-                      <div class="team-member"><img class="rounded-circle mx-auto" src="assets/team/marlo.jpg">
+                      <div class="team-member">
+                        <img class="rounded-circle mx-auto jump-animation" src="assets/team/marlo.jpg">
                           <h4>Marlo Busalpa</h4>
                           <p class="text-muted">Lead Designer</p>
                           <ul class="list-inline social-buttons">
@@ -69,7 +74,7 @@
                       </div>
                   </div>
                   <div class="col-sm-4">
-                      <div class="team-member"><img class="rounded-circle mx-auto" src="assets/team/cj.jpg">
+                      <div class="team-member"><img class="rounded-circle mx-auto jump-animation" src="assets/team/cj.jpg">
                           <h4>Carl Justine Dela Cruz</h4>
                           <p class="text-muted">Lead Marketer</p>
                           <ul class="list-inline social-buttons">
@@ -82,7 +87,7 @@
                       </div>
                   </div>
                   <div class="col-sm-4">
-                      <div class="team-member"><img class="rounded-circle mx-auto" src="assets/team/lj.jpg">
+                      <div class="team-member"><img class="rounded-circle mx-auto jump-animation" src="assets/team/lj.jpg">
                           <h4>Laryll Paraiso</h4>
                           <p class="text-muted">Lead Developer</p>
                           <ul class="list-inline social-buttons">
@@ -93,37 +98,11 @@
                           </ul>
                       </div>
                   </div>
-                  <!--
-                  <div class="col-sm-4">
-                      <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/icon.png">
-                          <h4>Jamir Korn Nieto</h4>
-                          <p class="text-muted">Lead Developer</p>
-                          <ul class="list-inline social-buttons">
-                              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fa fa-github"></i></a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-sm-4">
-                      <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/3.jpg">
-                          <h4>Vincent Ramos</h4>
-                          <p class="text-muted">Lead Developer</p>
-                          <ul class="list-inline social-buttons">
-                              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                              <li class="list-inline-item"><a href="#"><i class="fa fa-github"></i></a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  -->
               </div>
               <div class="container text-center four">
                 <div class="row last-two">
                     <div class="col member-4">
-                        <div class="team-member"><img class="rounded-circle mx-auto" src="assets/team/korn.jpg">
+                        <div class="team-member"><img class="rounded-circle mx-auto jump-animation" src="assets/team/korn.jpg">
                             <h4>Jamir Korn Nieto</h4>
                             <p class="text-muted">Lead Developer</p>
                             <ul class="list-inline social-buttons">
@@ -135,7 +114,7 @@
                         </div>
                     </div>
                     <div class="col member-5">
-                        <div class="team-member "><img class="rounded-circle mx-auto" src="assets/team/vincent.jpg">
+                        <div class="team-member"><img class="rounded-circle mx-auto jump-animation" src="assets/team/vincent.jpg">
                             <h4>Vincent Ramos</h4>
                             <p class="text-muted">Lead Developer</p>
                             <ul class="list-inline social-buttons">
@@ -208,11 +187,14 @@
     
         </div>
         <!--   === Footer Contents Ends ===   -->
-    
+    </div>
     </section>
 </main>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/agency.js"></script>
+<script src="assets/js/team.js"></script>
+
+
 </body>
 
 </html>

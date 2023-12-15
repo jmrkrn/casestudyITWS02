@@ -10,11 +10,24 @@ body {
      color: #fff;
 }
 
+.fade-up-animation {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: fadeUp 2s forwards;
+  }
+  
+  @keyframes fadeUp {
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
 #mainNav {
      padding-top: 0;
      padding-bottom: 0;
 	background-color: transparent;
-     /* background: linear-gradient(to left, #061f58, #000); */s
+     /* background: linear-gradient(to left, #061f58, #000); */
      scroll-behavior: smooth;
  }
 

@@ -17,6 +17,19 @@ body {
     padding-right: 165px;
 }
 
+.jump-animation {
+	animation: jump 1s infinite alternate;
+  }
+  
+  @keyframes jump {
+	0%,
+	100% {
+	  transform: translateY(0);
+	}
+	50% {
+	  transform: translateY(-20px);
+	}
+  }
 
 /*
 .section-subheading {
@@ -42,7 +55,7 @@ body {
 #mainNav {
      padding-top: 0;
      padding-bottom: 0;
-     /* background: linear-gradient(to left, #061f58, #000); */s
+     /* background: linear-gradient(to left, #061f58, #000); */
      scroll-behavior: smooth;
  }
  

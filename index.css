@@ -15,6 +15,38 @@ body {
      color: #C4A200;
  }
 
+
+ #loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #000000;
+	z-index: 999;
+     overflow: visible;
+}
+
+.intro-heading {
+     overflow: hidden;
+     position: relative;
+   }
+   
+   .intro-heading b::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: #fff; /* Set background color to match your page background */
+     animation: revealText 2s forwards;
+   }
+   
+   @keyframes revealText {
+     to {
+       left: 100%;
+     }
+   }
+
  /*
  li.nav-item {
      position: relative;

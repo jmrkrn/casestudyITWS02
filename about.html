@@ -20,9 +20,13 @@
      <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
      <link rel="stylesheet" href="css/about.css">
      <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/animation.css">
+     <script type="text/javascript" src="assets/js/animation.js"></script>
 </head>
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="54">
+     <div id="loader"></div>
+     <div id="content"> 
      <nav class="navbar navbar-expand-lg fixed-top navbar-dark custom-nav" id="mainNav">
           <div class="container">
                <a class="navbar-brand nav-text" href="#page-top ">
@@ -49,7 +53,7 @@
                     <div class="row">
                          <div class="col-lg-12 text-center">
                               <h1 class="text-uppercase">About us</h1>
-                              <h3 class="text-muted section-subheading custom-subheading">
+                              <h3 class="text-muted section-subheading custom-subheading fade-up-animation">
                                    Phase One: A global gaming platform for joy and excitement. Join now for a thrilling adventure through captivating games where nostalgia meets new horizons. Welcome to Phase One!</h3>
              
                          </div>
@@ -58,8 +62,8 @@
                     <div class="container text-center mb-5 ">
                          <div class="row custom-container-1">
                               <div class="col">
-                                   <h2>VISION</h2>
-                                   <P>At Phase One, we envision a digital playground where gaming transcends boundaries, 
+                                   <h2 class="fade-down-animation">VISION</h2>
+                                   <P class="fade-up-animation">At Phase One, we envision a digital playground where gaming transcends boundaries, 
                                         inspiring joy and fostering a sense of community. We strive to create an inclusive 
                                         platform that offers diverse and engaging gaming experiences, 
                                         connecting players worldwide through innovation, nostalgia, and entertainment.</P>
@@ -80,8 +84,8 @@
                                    </div>
                               </div>
                               <div class="col">
-                                   <h2>MISSION</h2>
-                                   <P>Our mission at Phase One is to curate a dynamic collection of games that cater to every gamer's passion and preference. 
+                                   <h2  class="fade-down-animation">MISSION</h2>
+                                   <P class="fade-up-animation">Our mission at Phase One is to curate a dynamic collection of games that cater to every gamer's passion and preference. 
                                         Through our platform, we aim to foster a vibrant gaming community, encouraging exploration, skill development,
                                          and shared experiences among players of all ages and backgrounds. 
                                          We prioritize user satisfaction to ensure an immersive and enjoyable gaming environment for all.</P>
@@ -152,6 +156,7 @@
      </main>
      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
      <script src="assets/js/agency.js"></script>
+</div>
 </body>
 
 </html>

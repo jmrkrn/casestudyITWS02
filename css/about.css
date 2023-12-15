@@ -44,6 +44,32 @@ header {
 	color: black;
 }
 
+.fade-up-animation {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: fadeUp 2s forwards;
+  }
+  
+  @keyframes fadeUp {
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+
+  .fade-down-animation {
+	margin-bottom: 25px;
+	opacity: 0;
+	transform: translateY(0);
+	animation: fadeDown 1s forwards;
+  }
+  
+  @keyframes fadeDown {
+	to {
+	  opacity: 1;
+	  transform: translateY(20px);
+	}
+  }
 
  .text-muted {
      --bs-text-opacity: 1;
